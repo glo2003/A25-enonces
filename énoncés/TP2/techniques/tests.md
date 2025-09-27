@@ -24,9 +24,9 @@ recherche/obtention, ou encore des *assembleurs/mappers* pour la conversion logi
 Pour être certain que votre logiciel soit bien intégré à Jersey, vous devez effectuer 
 des tests d'intégration pour les routes suivantes :
 
-- `POST /groups`
-- `GET /groups/{groupName}`
-- `GET /groups`
+- `POST /restaurants`
+- `GET /restaurants/<id>`
+- `GET /restaurants`
 
 Pour ce faire, vous devez tester :
 
