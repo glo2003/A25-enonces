@@ -19,7 +19,6 @@ plus de classes que simplement celles des ressources. Par exemple, pensez à cr�
 recherche/obtention, ou encore des *assembleurs/mappers* pour la conversion logique 
 <--> représentaton. Le but est de réussir à tester le plus de comportements possibles!
 
-
 ## Clean code
 
 L'ensemble de vos tests doivent respecter les meilleures pratiques en matière de Clean 
