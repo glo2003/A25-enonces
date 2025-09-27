@@ -19,6 +19,34 @@ plus de classes que simplement celles des ressources. Par exemple, pensez à cr�
 recherche/obtention, ou encore des *assembleurs/mappers* pour la conversion logique 
 <--> représentaton. Le but est de réussir à tester le plus de comportements possibles!
 
+## Tests d'intégration d'API (Jersey)
+
+Pour être certain que votre logiciel soit bien intégré à Jersey, vous devez effectuer
+des tests d'intégration pour les routes suivantes :
+
+- `POST /restaurants`
+- `GET /restaurants/<id>`
+- `GET /restaurants`
+
+Pour ce faire, vous devez tester :
+
+- 1 cas de succès
+- au moins 1 cas pour chaque type d'erreur mentionné dans l'énoncé
+
+Pour chaque test, assurez-vous de vérifier :
+
+- le status de retour
+- les headers attendus
+- le contenu du body
+
+La librairie JerseyTest vous permet d'automatiquement démarrer un serveur Jersey
+aléatoire vous permettant d'exécuter vos tests avec JUnit. JerseyTest vous offre
+également des features pour appeler votre serveur et valider les réponses, mais vous
+pouvez toujours utiliser d'autres librairies additionnelles comme Rest-Assured et AssertJ.
+
+On vous suggère également d'utiliser Mockito pour mocker le comportement des dépendances
+des classes testées.
+
 ## Clean code
 
 L'ensemble de vos tests doivent respecter les meilleures pratiques en matière de Clean 
@@ -32,4 +60,4 @@ Code. Vous devez donc vous assurer de :
 
 ## Changelog
 
-- (27/09/2025): Retrait de la section *Tests d'intégration d'API (Jersey)*.
+- (27/09/2025): Mise à jour de la section *Tests d'intégration d'API (Jersey)* pour prendre en compte les chemins du projet.
