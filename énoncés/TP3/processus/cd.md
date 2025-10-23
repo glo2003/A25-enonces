@@ -15,7 +15,7 @@ majorité du code reste *backward-compatible*, ce n'est pas toujours le cas.
 
 Ainsi, afin de mieux assurer le comportement de l'application, vous la déploierez dans une image Docker.
 
-> ⚠️ Notez que le fichier de configuration `Dockerfile` vous est déjà fourni et **vous devez le modifier comme ceci :**
+> ⚠️ Notez que le fichier de configuration `Dockerfile` vous est déjà fourni et **vous devez vous assurer qu'il est exactement comme ceci :**
 
 ```
 FROM maven:3-amazoncorretto-21
@@ -31,8 +31,7 @@ RUN mvn --batch-mode compiler:compile
 CMD ["mvn", "--batch-mode", "--offline", "exec:java"]
 ```
 > ⚠️ Le fichier doit être copié-collé et être exactement identique à celui fourni ici. L'option batch mode a été ajoutée pour rendre 
-> les logs plus lisibles, et `COPY src src` a été remplacé par `COPY . .` afin d'inclure également les fichiers de configuration
-> utilisés par certaines équipes.
+> les logs plus lisibles.
 
 ## Déploiement (Github Actions)
 
