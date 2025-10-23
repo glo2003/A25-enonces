@@ -56,3 +56,8 @@ Lors du déploiement, il est impossible de prédire à l’avance sur quel port 
 Cette valeur est souvent déterminée dynamiquement par le *runner* (serveur hôte) en fonction des autres applications 
 déjà en cours d’exécution. Vous devez donc récupérer la variable d’environnement `PORT` et démarrer l’application sur 
 ce port. Si cette variable n’est pas définie, utilisez la valeur `8080` par défaut. Pour l’adresse `host`, utilisez toujours `0.0.0.0`.
+
+
+### Changelog
+
+- 23/10/2025 : Ajustement du warning relatif au fichier Dockerfile.
